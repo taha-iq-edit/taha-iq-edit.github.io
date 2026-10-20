@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Taha Ali Oudah — Creative Production Manager, video editor and filmmaker in Baghdad. Selected works, clients and contact.">
+<meta property="og:title" content="Taha Ali Oudah — Portfolio">
+<meta property="og:description" content="Video editor · Director · Filmmaker — Baghdad">
+<meta property="og:image" content="works/05.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a261b'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%23e0533d'/%3E%3C/svg%3E">
+<title>Taha Ali Oudah — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one dark editing-suite surface on topo texture — hero monitor with live timecode, a contact-sheet of works, logo wall, about, contact */
+:root{
+  --bg:#1a261b; --bg-2:#142016; --panel:rgba(255,255,255,.045); --line:rgba(255,255,255,.13);
+  --fg:#eef1ec; --fg-2:#c9d2c8; --fg-3:#8f9b92; --accent:#d9e4c8; --rec:#e0533d;
+  --f-ar:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  --f-en:'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --f-body:var(--f-ar);
+  --r:14px; --maxw:1240px;
+  color-scheme:dark;
+}
+html[lang="en"]{--f-body:var(--f-en)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.topo{position:fixed;inset:0;background:url(img/topo.webp) center/cover no-repeat;opacity:.9;pointer-events:none;z-index:0}
+a{color:inherit}
+img,video{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-3)}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.2}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(20,32,22,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.mark{font-family:var(--f-ar);font-weight:700;font-size:26px;line-height:1;text-decoration:none;display:flex;align-items:center;gap:10px}
+.mark .dot{width:8px;height:8px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 4px rgba(224,83,61,.18)}
+nav{display:flex;gap:4px;margin-inline-start:auto;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:14px;color:var(--fg-2);padding:8px 12px;border-radius:999px}
+nav a:hover{color:var(--fg);background:var(--panel)}
+.lang{border:1px solid var(--line);background:transparent;border-radius:999px;padding:7px 14px;font-family:var(--f-mono);font-size:13px;cursor:pointer;min-height:36px}
+.lang:hover{background:var(--panel)}
+@media (max-width:720px){nav{display:none}.lang{margin-inline-start:auto}}
+
+/* hero */
+.hero{padding-block:56px 40px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,72px);font-weight:700;letter-spacing:-.01em;margin-top:14px}
+html[lang="en"] .hero h1{letter-spacing:-.025em}
+.role{font-size:clamp(18px,2vw,22px);font-weight:500;margin-top:10px}
+.sub{color:var(--fg-3);margin-top:2px}
+.motto{margin-top:22px;font-size:clamp(18px,2vw,21px);color:var(--fg);max-width:30ch;border-inline-start:2px solid var(--rec);padding-inline-start:14px;line-height:1.6}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.stat{border:1px solid var(--line);border-radius:12px;padding:10px 16px;background:var(--panel);min-width:96px}
+.stat b{display:block;font-family:var(--f-mono);font-size:24px;font-weight:500;line-height:1.2}
+.stat span{font-size:13px;color:var(--fg-3)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;text-decoration:none;font-size:15px;cursor:pointer}
+.btn.primary{background:var(--fg);color:var(--bg-2);border-color:var(--fg);font-weight:600}
+.btn:hover{border-color:var(--fg)}
+.btn.primary:hover{background:#fff}
+.monitor{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;box-shadow:0 30px 80px -30px rgba(0,0,0,.7)}
+.monitor video{width:100%;height:100%;object-fit:cover}
+.osd{position:absolute;inset:0;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;padding:14px 16px;font-family:var(--f-mono);font-size:12px;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.6);direction:ltr}
+.osd .row{display:flex;justify-content:space-between;align-items:center}
+.osd .rec{display:flex;align-items:center;gap:8px}
+.osd .rec i{width:8px;height:8px;border-radius:50%;background:var(--rec);animation:blink 1.2s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
+@media (prefers-reduced-motion:reduce){.osd .rec i{animation:none}}
+.safe{position:absolute;inset:10%;border:1px dashed rgba(255,255,255,.18);border-radius:4px}
+.mute{pointer-events:auto;position:absolute;bottom:12px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.35);cursor:pointer;display:grid;place-items:center}
+@media (max-width:900px){.hero .wrap{grid-template-columns:minmax(0,1fr);gap:28px}.hero{padding-block:32px 24px}}
+
+/* section heads */
+section{position:relative;z-index:1}
+.sec{padding-block:56px}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.head h2{font-size:clamp(28px,3.4vw,40px);font-weight:700;margin-top:6px}
+.head p{margin:6px 0 0;color:var(--fg-2);max-width:60ch}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:14px;color:var(--fg-2)}
+.chip:hover{color:var(--fg);border-color:rgba(255,255,255,.3)}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg-2);border-color:var(--fg);font-weight:600}
+.chip .n{font-family:var(--f-mono);font-size:12px;opacity:.7;margin-inline-start:6px}
+
+/* works grid — contact sheet */
+.grid{columns:3 300px;column-gap:16px}
+.card{break-inside:avoid;margin-bottom:16px;display:block;width:100%;text-align:start;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:0;cursor:pointer;overflow:hidden;transition:border-color .2s}
+.card:hover{border-color:rgba(255,255,255,.35)}
+.card[hidden]{display:none!important}
+.thumb{position:relative;background:#000;overflow:hidden}
+.thumb.h{aspect-ratio:16/9}.thumb.v{aspect-ratio:9/16;max-height:520px;width:100%}
+.thumb img,.thumb video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb video{opacity:0;transition:opacity .25s}
+.card.playing .thumb video{opacity:1}
+.tc{position:absolute;top:10px;inset-inline-start:10px;font-family:var(--f-mono);font-size:11px;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:6px;direction:ltr}
+.play{position:absolute;bottom:10px;inset-inline-end:10px;width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.4);display:grid;place-items:center}
+.meta{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px}
+.meta h3{font-size:16.5px;font-weight:600}
+.meta .tags{display:flex;gap:8px;flex-wrap:wrap;font-size:12.5px;color:var(--fg-3)}
+.meta .tags .client{color:var(--accent)}
+@media (max-width:640px){.grid{columns:2 150px;column-gap:10px}.card{margin-bottom:10px}.meta{padding:10px 12px 12px}.meta h3{font-size:14px}.meta .tags{font-size:11.5px}.play{display:none}}
+
+/* clients */
+.logos{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:clamp(14px,3vw,28px)}
+.logos img{width:100%;height:auto}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:40px;align-items:start}
+.about img.me{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:1px solid var(--line)}
+.about .body{min-width:0;display:flex;flex-direction:column;gap:18px}
+.about p{margin:0;color:var(--fg-2);font-size:17px;max-width:62ch}
+.about p strong{color:var(--fg);font-weight:600}
+.timeline{display:flex;flex-direction:column;gap:14px;border-inline-start:1px solid rgba(255,255,255,.2);padding-inline-start:20px;margin-top:6px}
+.tl{position:relative}
+.tl::before{content:"";position:absolute;inset-inline-start:-26px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--fg)}
+.tl.o::before{background:var(--bg);border:1.5px solid var(--fg)}
+.tl .top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.tl b{font-size:17px}
+.tl .when{font-family:var(--f-mono);font-size:12.5px;color:var(--fg-3)}
+.tl .what{color:var(--fg-3);font-size:14px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{font-size:13px;padding:6px 13px;border:1px solid var(--line);border-radius:999px}
+.skills span.hi{background:rgba(255,255,255,.1)}
+.dl{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.note{font-size:13px;color:var(--fg-3)}
+@media (max-width:820px){.about{grid-template-columns:minmax(0,1fr)}.about img.me{max-width:340px}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ct{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ct .lbl{font-size:13px;color:var(--fg-3)}
+.ct .val{font-family:var(--f-mono);font-size:16px;direction:ltr;text-align:start;user-select:all;overflow-wrap:anywhere}
+html[dir="rtl"] .ct .val{text-align:right}
+.ct .act{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.sbtn{min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-size:13.5px;text-decoration:none;display:inline-flex;align-items:center}
+.sbtn:hover{border-color:var(--fg)}
+@media (max-width:820px){.contact{grid-template-columns:minmax(0,1fr)}}
+.big-thanks{font-size:clamp(34px,6vw,64px);font-weight:700;margin-top:48px}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:22px;font-family:var(--f-mono);font-size:12px;color:var(--fg-3);direction:ltr}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,12,9,.94);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 12px) max(12px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 12px) max(12px,env(safe-area-inset-left,0px))}
+.lb[hidden]{display:none!important}
+.lb .bar{display:flex;align-items:center;gap:10px;justify-content:space-between;padding-bottom:10px}
+.lb .ttl{min-width:0}
+.lb .ttl b{display:block;font-size:17px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb .ttl span{font-size:13px;color:var(--fg-3)}
+.ibtn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer;display:grid;place-items:center;flex-shrink:0}
+.ibtn:hover{border-color:var(--fg)}
+.lb .stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;gap:10px}
+.lb video{max-width:100%;max-height:100%;border-radius:10px;background:#000}
+.lb .desc{text-align:center;color:var(--fg-2);font-size:14px;padding-top:10px;max-width:70ch;margin:0 auto}
+@media (max-width:640px){.lb .nav{display:none}}
+
+/* ===== transitions ===== */
+#intro{position:fixed;inset:0;z-index:200;background:#0e1510;display:grid;place-items:center;cursor:pointer}
+#intro[hidden]{display:none!important}
+#intro .ring{position:relative;width:min(46vmin,300px);aspect-ratio:1;border-radius:50%;border:2px solid rgba(238,241,236,.5);display:grid;place-items:center;overflow:hidden}
+#intro .ring::before{content:"";position:absolute;inset:0;background:conic-gradient(rgba(238,241,236,.22) var(--sweep,0deg),transparent 0)}
+#intro .ring::after{content:"";position:absolute;inset:8%;border-radius:50%;border:1px solid rgba(238,241,236,.25)}
+#intro .x,#intro .y{position:absolute;background:rgba(238,241,236,.35)}
+#intro .x{left:-20vw;right:-20vw;height:1px;top:50%}#intro .y{top:-20vh;bottom:-20vh;width:1px;left:50%}
+#intro .num{position:relative;z-index:1;font-family:var(--f-mono);font-size:min(22vmin,140px);color:var(--fg);line-height:1}
+#intro .cap{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 28px);left:0;right:0;text-align:center;font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--fg-3);direction:ltr}
+#intro.flash{background:#fff}#intro.flash>*{visibility:hidden}
+#intro.out{animation:wipeOut .7s cubic-bezier(.77,0,.18,1) forwards}
+@keyframes wipeOut{to{clip-path:inset(0 0 0 100%)}}
+html[dir="rtl"] #intro.out{animation-name:wipeOutR}
+@keyframes wipeOutR{to{clip-path:inset(0 100% 0 0)}}
+
+.wipe{position:fixed;inset:0;z-index:150;pointer-events:none;background:var(--fg);clip-path:inset(0 100% 0 0)}
+.wipe.go{animation:wipeAcross .9s cubic-bezier(.77,0,.18,1) forwards}
+@keyframes wipeAcross{0%{clip-path:inset(0 100% 0 0)}45%{clip-path:inset(0 0 0 0)}55%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 100%)}}
+.wipe span{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-body);font-weight:700;font-size:clamp(32px,6vw,72px);color:var(--bg)}
+
+.js .rv{clip-path:inset(0 0 100% 0);transform:translateY(28px);transition:clip-path .9s cubic-bezier(.2,.7,.1,1),transform .9s cubic-bezier(.2,.7,.1,1)}
+.js .rv.in{clip-path:inset(0 0 -10% 0);transform:none}
+.js .rvx{clip-path:inset(0 100% 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1)}
+html[dir="rtl"].js .rvx{clip-path:inset(0 0 0 100%)}
+.js .rvx.in,html[dir="rtl"].js .rvx.in{clip-path:inset(0 -2% 0 -2%)}
+.js .card.rv{transition-delay:calc(var(--d,0)*60ms)}
+.monitor.rv::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,214,160,.55) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none;mix-blend-mode:screen}
+.monitor.rv.in::after{animation:leak 1.4s .4s ease-out forwards}
+@keyframes leak{to{transform:translateX(120%)}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.35s}
+.lb.zoom video{animation:zoomIn .45s cubic-bezier(.2,.7,.1,1)}
+@keyframes zoomIn{from{transform:scale(.6);opacity:0;filter:blur(8px)}to{transform:none;opacity:1;filter:none}}
+@media (prefers-reduced-motion:reduce){
+  .js .rv,.js .rvx,html[dir="rtl"].js .rvx{clip-path:none!important;transform:none!important;transition:none!important}
+  .wipe,#intro{display:none!important}
+  .monitor.rv::after{display:none}
+}
+</style>
+</head>
+<body>
+
+
+<script>document.documentElement.classList.add("js")</script>
+<div id="intro" hidden aria-hidden="true"><span class="x"></span><span class="y"></span><div class="ring"><span class="num" id="introNum">3</span></div><div class="cap">TAHA ALI OUDAH · PORTFOLIO</div></div>
+<div class="wipe" id="wipe" aria-hidden="true"><span id="wipeTxt"></span></div>
+<div class="topo" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Taha Oudah"><span class="dot" aria-hidden="true"></span>طه</a>
+    <nav aria-label="Sections">
+      <a href="#work" data-i="navWork">الأعمال</a>
+      <a href="#clients" data-i="navClients">الجهات</a>
+      <a href="#about" data-i="navAbout">عني</a>
+      <a href="#contact" data-i="navContact">تواصل</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" aria-label="Switch language">EN</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Portfolio · Since 2018</div>
+      <h1 class="rvx" data-i="name">طه علي عودة</h1>
+      <div class="role">Creative Production Manager</div>
+      <div class="sub" data-i="sub">مونتير · مخرج · صانع أفلام — بغداد</div>
+      <p class="motto rvx" data-i="motto">لكل لقطة سبب، ولكل قطعٍ توقيته.</p>
+      <div class="stats rv">
+        <div class="stat"><b>8</b><span data-i="stYears">سنوات خبرة</span></div>
+        <div class="stat"><b>52</b><span data-i="stClients">جهة وعلامة</span></div>
+        <div class="stat"><b id="statWorks">21</b><span data-i="stWorks">عمل مختار</span></div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#work" data-i="ctaWork">شاهد الأعمال</a>
+        <a class="btn" href="#contact" data-i="ctaContact">تواصل معي</a>
+      </div>
+    </div>
+    <div class="monitor rv">
+      <video id="heroVid" src="works/05.mp4" poster="works/05.jpg" muted autoplay loop playsinline preload="metadata" aria-label="Showreel preview"></video>
+      <div class="osd" aria-hidden="true">
+        <div class="row"><span class="rec"><i></i>PLAY</span><span>1920×1080 · 25p</span></div>
+        <div class="safe"></div>
+        <div class="row"><span id="tc">TC 00:00:00:00</span><span></span></div>
+      </div>
+      <button class="mute" id="muteBtn" type="button" aria-label="Unmute">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path id="muteX" d="m23 9-6 6M17 9l6 6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow">Selected work</div>
+        <h2 data-i="workTitle">أعمال مختارة</h2>
+        <p data-i="workSub">سينما، عقارات، إعلانات، ريلز وأزياء. اضغط على أي عمل لمشاهدته.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter work"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="clients">
+  <div class="wrap">
+    <div class="head rv">
+      <div>
+        <div class="eyebrow">Clients &amp; brands</div>
+        <h2 data-i="clientsTitle">جهات عملت معها</h2>
+        <p data-i="clientsSub">ثقةٌ بُنيت عبر سنوات من العمل، وهذه الأسماء كانت جزءاً من الرحلة.</p>
+      </div>
+      <div class="mono" style="font-size:44px;font-weight:500;line-height:1">52</div>
+    </div>
+    <div class="logos rv"><img src="img/logos.webp" alt="Logos of 52 clients and brands" loading="lazy" width="1466" height="1226"></div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap about">
+    <img class="me rv" src="img/photo.jpg" alt="Taha Ali Oudah" loading="lazy">
+    <div class="body">
+      <div class="eyebrow">About</div>
+      <h2 style="font-size:clamp(28px,3.4vw,40px)" data-i="aboutTitle">مُنذ عام 2018</h2>
+      <p data-i="aboutP1">صانع أفلام ومونتير بخبرة ثماني سنوات تنقّلت فيها بين الفيلم والإعلان وصناعة المحتوى. أشغل حالياً منصب Creative Production Manager في شركة أمواج الدولية، وأقود فريق المونتيرية والمصورين في قسم التسويق.</p>
+      <p data-i="aboutP2">بدأت المونتاج من <strong>After Effects</strong> قبل أي برنامج آخر، لذلك الحركة والتفاصيل البصرية جزء أصيل من طريقة تفكيري في القطع. أكتب الفكرة المونتاجية والإخراجية للعمل قبل تنفيذه.</p>
+      <div class="timeline rv">
+        <div class="tl"><div class="top"><b data-i="tl1">شركة أمواج الدولية</b><span class="when">2022 — Present</span></div><div class="what">Creative Production Manager</div></div>
+        <div class="tl o"><div class="top"><b data-i="tl2">عمل حر</b><span class="when">2018 — Present</span></div><div class="what" data-i="tl2w">مخرج · مساعد مخرج · مونتير</div></div>
+        <div class="tl o"><div class="top"><b data-i="tl3">جامعة بغداد — الفنون الجميلة</b><span class="when">2025</span></div><div class="what" data-i="tl3w">بكالوريوس سينما وتلفزيون، فرع المونتاج</div></div>
+      </div>
+      <div class="skills" aria-label="Skills">
+        <span>Premiere Pro</span><span class="hi">After Effects</span><span>Audition</span><span>Photoshop</span><span>Illustrator</span><span>Color Grading</span><span>Sound Design</span><span>AI Production</span><span>Creative Direction</span>
+      </div>
+      <div class="dl">
+        <button class="btn primary" type="button" data-cv="ar" data-i="cvAr">تحميل السيرة الذاتية — عربي</button>
+        <button class="btn" type="button" data-cv="en" data-i="cvEn">Download CV — English</button>
+        <span class="note" id="dlNote" role="status"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="head rv"><div><div class="eyebrow">Contact</div><h2 data-i="contactTitle">لنصنع شيئاً معاً</h2></div></div>
+    <div class="contact rv">
+      <div class="ct"><span class="lbl" data-i="phone">الهاتف / واتساب</span><span class="val" id="vPhone">+964 771 400 6328</span><div class="act"><button class="sbtn" type="button" data-copy="vPhone" data-i="copy">نسخ</button><a class="sbtn" href="https://wa.me/9647714006328" target="_blank" rel="noopener">WhatsApp</a></div></div>
+      <div class="ct"><span class="lbl" data-i="email">البريد الإلكتروني</span><span class="val" id="vMail">taha90627@gmail.com</span><div class="act"><button class="sbtn" type="button" data-copy="vMail" data-i="copy">نسخ</button></div></div>
+      <div class="ct"><span class="lbl">Instagram</span><span class="val" id="vIg">@taha.1i</span><div class="act"><a class="sbtn" href="https://www.instagram.com/taha.1i/" target="_blank" rel="noopener" data-i="open">فتح الحساب</a></div></div>
+    </div>
+    <div class="big-thanks rvx" data-i="thanks">شكراً</div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>TAHA ALI OUDAH</span><span>BAGHDAD · IRAQ</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+  <div class="bar">
+    <div class="ttl"><b id="lbTitle"></b><span id="lbSub"></span></div>
+    <button class="ibtn" id="lbClose" type="button" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="stage">
+    <button class="ibtn nav" id="lbPrev" type="button" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;flex:1;height:100%;min-width:0"><video id="lbVid" controls playsinline></video><span id="lbLoad" hidden style="position:absolute;inset:auto 0 50% 0;text-align:center;font-family:var(--f-mono);font-size:14px">…</span></div>
+    <button class="ibtn nav" id="lbNext" type="button" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+  <p class="desc" id="lbDesc"></p>
+</div>
+
+<script>
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// reveal-on-scroll
+const io=('IntersectionObserver' in window)?new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }),{rootMargin:'0px 0px -8% 0px',threshold:.08}):null;
+function reveal(el){ if(!io||RM){ el.classList.add('in'); return; } io.observe(el); }
+document.querySelectorAll('.rv,.rvx').forEach(reveal);
+setTimeout(()=>document.querySelectorAll('.rv:not(.in),.rvx:not(.in)').forEach(el=>{const r=el.getBoundingClientRect(); if(r.top<innerHeight) el.classList.add('in');}),2600);
+const CATS={
+  all:{ar:'الكل',en:'All'},
+  cine:{ar:'سينمائي',en:'Cinematic'},
+  re:{ar:'عقارات وبراندات',en:'Real estate & brand'},
+  ad:{ar:'إعلانات',en:'Commercials'},
+  reel:{ar:'ريلز',en:'Reels'},
+  art:{ar:'أزياء وفن',en:'Fashion & art'}
+};
+// v = vertical; t = title; d = one-line note
+const WORKS=[
+ {id:'44',c:'art',v:1,dur:11,t:{ar:'شيء قادم من الضوء',en:'Something Coming From the Light'},d:{ar:'تيزر قصير بتأثيرات بصرية على تمثال.',en:'Short VFX teaser built around a statue.'}},
+ {id:'09',c:'cine',v:1,dur:57,t:{ar:'خلف المونتاج — الـ Timeline',en:'Behind the edit — the timeline'},d:{ar:'المشهد النهائي فوق، والـ timeline الحقيقي تحت.',en:'The final cut on top, the real timeline below.'}},
+ {id:'45',c:'re',v:0,dur:32,cl:'Amwaj',t:{ar:'أمواج — فيلم البراند',en:'Amwaj — brand film'},d:{ar:'فيلم سينمائي قصير لهوية أمواج الدولية.',en:'A short cinematic piece for the Amwaj International brand.'}},
+ {id:'21',c:'ad',v:1,dur:14,t:{ar:'Puma × بغداد بوليفارد',en:'Puma × Baghdad Boulevard'},d:{ar:'إعلان موشن سريع.',en:'Fast-paced motion spot.'}},
+ {id:'00',c:'art',v:1,dur:66,t:{ar:'عرض أزياء — فيلم',en:'Fashion show film'},d:{ar:'تصاميم على المانيكان بإضاءة سينمائية.',en:'Couture pieces on mannequins, lit like cinema.'}},
+ {id:'30',c:'cine',v:0,dur:80,t:{ar:'الصحراء',en:'The Desert'},d:{ar:'قطعة سينمائية بإيقاع هادئ.',en:'A slow, cinematic piece.'}},
+ {id:'05',c:'re',v:0,dur:40,t:{ar:'فيلم عقاري — الغروب',en:'Real estate film — Sunset'},d:{ar:'عمارة وضوء ذهبي.',en:'Architecture in golden light.'}},
+ {id:'17',c:'ad',v:1,dur:22,t:{ar:'سيارة — ليل',en:'Car — Night'},d:{ar:'إعلان سيارة بإضاءة ليلية.',en:'A night-lit car commercial.'}},
+ {id:'33',c:'cine',v:0,dur:81,t:{ar:'فيلم قصير — الطريق',en:'Short film — The Road'},d:{ar:'دراما قصيرة بتدريج لوني دافئ.',en:'Short drama in a warm grade.'}},
+ {id:'12',c:'re',v:0,dur:42,cl:'Amwaj',t:{ar:'أمواج — المدينة ليلاً',en:'Amwaj — the city at night'},d:{ar:'جوي وليلي لمشاريع أمواج.',en:'Aerial and night footage of Amwaj projects.'}},
+ {id:'43',c:'art',v:1,dur:14,t:{ar:'Art-Tech',en:'Art-Tech'},d:{ar:'إعلان مستوحى من لوحة خلق آدم.',en:'An ad built on The Creation of Adam.'}},
+ {id:'02',c:'re',v:0,dur:359,parts:3,t:{ar:'فيلم تعريفي — داتا سنتر',en:'Corporate film — Data center'},d:{ar:'فيلم تعريفي تقني طويل.',en:'A long-form technical corporate film.'}},
+ {id:'14',c:'reel',v:1,dur:21,t:{ar:'ريل — نصيحة بالأرقام',en:'Reel — tips by numbers'},d:{ar:'Talking-head بكابشن متحرك.',en:'Talking-head with kinetic captions.'}},
+ {id:'36',c:'cine',v:0,dur:75,t:{ar:'تراث',en:'Heritage'},d:{ar:'قطعة وثائقية عن المكان والناس.',en:'A documentary piece on place and people.'}},
+ {id:'23',c:'ad',v:1,dur:43,t:{ar:'تفاصيل السيارة',en:'Car detailing'},d:{ar:'لقطات ماكرو وتفاصيل.',en:'Macro shots and detail.'}},
+ {id:'06',c:'re',v:0,dur:59,t:{ar:'مشروع سكني — جوي',en:'Residential project — aerial'},d:{ar:'جولة جوية في مشروع سكني.',en:'An aerial tour of a residential project.'}},
+ {id:'46',c:'cine',v:0,dur:70,t:{ar:'فيلم قصير — البيت',en:'Short film — The House'},d:{ar:'مشاهد داخلية بإضاءة طبيعية.',en:'Interior scenes in natural light.'}},
+ {id:'42',c:'reel',v:1,dur:39,t:{ar:'ريل — عيادة LISA',en:'Reel — LISA clinic'},d:{ar:'Talking-head بإضاءة نيون.',en:'Talking-head with neon lighting.'}},
+ {id:'16',c:'re',v:1,dur:27,t:{ar:'حي سكني — ريل',en:'Residential district — reel'},d:{ar:'ريل عمودي بحركة FPV.',en:'Vertical reel with FPV movement.'}},
+ {id:'01',c:'re',v:0,dur:319,parts:2,t:{ar:'فيلم تعريفي — منصة رقمية',en:'Corporate film — Digital platform'},d:{ar:'فيلم تعريفي لمنصة تقنية.',en:'A corporate film for a tech platform.'}},
+ {id:'40',c:'re',v:1,dur:310,parts:2,t:{ar:'فيلم مشروع — مع الـ Timeline',en:'Project film — with the timeline'},d:{ar:'الفيلم كاملاً مع الـ timeline.',en:'The full film alongside its timeline.'}}
+];
+const T={
+ ar:{navWork:'الأعمال',navClients:'الجهات',navAbout:'عني',navContact:'تواصل',name:'طه علي عودة',sub:'مونتير · مخرج · صانع أفلام — بغداد',motto:'لكل لقطة سبب، ولكل قطعٍ توقيته.',stYears:'سنوات خبرة',stClients:'جهة وعلامة',stWorks:'عمل مختار',ctaWork:'شاهد الأعمال',ctaContact:'تواصل معي',workTitle:'أعمال مختارة',workSub:'سينما، عقارات، إعلانات، ريلز وأزياء. اضغط على أي عمل لمشاهدته.',clientsTitle:'جهات عملت معها',clientsSub:'ثقةٌ بُنيت عبر سنوات من العمل، وهذه الأسماء كانت جزءاً من الرحلة.',aboutTitle:'مُنذ عام 2018',aboutP1:'صانع أفلام ومونتير بخبرة ثماني سنوات تنقّلت فيها بين الفيلم والإعلان وصناعة المحتوى. أشغل حالياً منصب Creative Production Manager في شركة أمواج الدولية، وأقود فريق المونتيرية والمصورين في قسم التسويق.',aboutP2:'بدأت المونتاج من <strong>After Effects</strong> قبل أي برنامج آخر، لذلك الحركة والتفاصيل البصرية جزء أصيل من طريقة تفكيري في القطع. أكتب الفكرة المونتاجية والإخراجية للعمل قبل تنفيذه.',tl1:'شركة أمواج الدولية',tl2:'عمل حر',tl2w:'مخرج · مساعد مخرج · مونتير',tl3:'جامعة بغداد — الفنون الجميلة',tl3w:'بكالوريوس سينما وتلفزيون، فرع المونتاج',cvAr:'تحميل السيرة الذاتية — عربي',cvEn:'Download CV — English',contactTitle:'لنصنع شيئاً معاً',phone:'الهاتف / واتساب',email:'البريد الإلكتروني',copy:'نسخ',copied:'تم النسخ',open:'فتح الحساب',thanks:'شكراً',sec:'ث',saved:'تم الحفظ',dlFail:'التحميل غير متاح هنا. تواصل معي وأرسلها لك.',lang:'EN'},
+ en:{navWork:'Work',navClients:'Clients',navAbout:'About',navContact:'Contact',name:'Taha Ali Oudah',sub:'Video Editor · Director · Filmmaker — Baghdad',motto:'Every shot has a reason, and every cut has its timing.',stYears:'years of experience',stClients:'clients & brands',stWorks:'selected works',ctaWork:'Watch the work',ctaContact:'Get in touch',workTitle:'Selected work',workSub:'Cinema, real estate, commercials, reels and fashion. Tap any piece to watch it.',clientsTitle:'Clients & brands',clientsSub:'Trust built over years of work. These names were part of the journey.',aboutTitle:'Since 2018',aboutP1:'Filmmaker and video editor with eight years across film, advertising and content. I work as Creative Production Manager at Amwaj International, leading the marketing department\'s team of editors and photographers.',aboutP2:'I started editing in <strong>After Effects</strong> before any other program, so motion and visual detail are built into how I think about a cut. I write the editing and directing concept of a project before it is shot.',tl1:'Amwaj International',tl2:'Freelance',tl2w:'Director · Assistant Director · Video Editor',tl3:'University of Baghdad — Fine Arts',tl3w:'B.A. Cinema & Television, Film Editing',cvAr:'تحميل السيرة الذاتية — عربي',cvEn:'Download CV — English',contactTitle:'Let\'s make something together',phone:'Phone / WhatsApp',email:'Email',copy:'Copy',copied:'Copied',open:'Open profile',thanks:'Thank you',sec:'s',saved:'Saved',dlFail:'Downloads aren\'t available here. Contact me and I\'ll send it.',lang:'ع'}
+};
+let lang='ar';
+try{const s=localStorage.getItem('to-lang'); if(s==='en'||s==='ar') lang=s;}catch(e){}
+const $=s=>document.querySelector(s);
+const grid=$('#grid'), filters=$('#filters');
+let cat='all', order=[];
+
+function fmt(s){const m=Math.floor(s/60),r=s%60;return (m?m+':':'0:')+String(r).padStart(2,'0')}
+function playIcon(){return '<svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>'}
+
+function renderFilters(){
+  filters.innerHTML='';
+  Object.keys(CATS).forEach(k=>{
+    const n=k==='all'?WORKS.length:WORKS.filter(w=>w.c===k).length;
+    const b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed',String(k===cat));
+    b.innerHTML=CATS[k][lang]+'<span class="n">'+n+'</span>';
+    b.onclick=()=>{ const run=()=>{cat=k;renderFilters();applyFilter()}; if(document.startViewTransition&&!RM) document.startViewTransition(run); else run(); };
+    filters.appendChild(b);
+  });
+}
+function renderGrid(){
+  grid.innerHTML='';
+  WORKS.forEach((w,i)=>{
+    const b=document.createElement('button');b.type='button';b.className='card';b.dataset.c=w.c;b.dataset.i=i;
+    b.setAttribute('aria-label',w.t[lang]);
+    b.innerHTML='<div class="thumb '+(w.v?'v':'h')+'"><img src="works/'+w.id+'.jpg" alt="" loading="lazy"><span class="tc">'+fmt(w.dur)+'</span><span class="play">'+playIcon()+'</span></div>'+
+      '<div class="meta"><h3></h3><div class="tags"><span>'+CATS[w.c][lang]+'</span>'+(w.cl?'<span class="client">'+w.cl+'</span>':'')+'</div></div>';
+    b.querySelector('h3').textContent=w.t[lang];
+    b.onclick=()=>openLb(i);
+    if(!w.parts && matchMedia('(hover:hover)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
+      let v=null;
+      b.addEventListener('mouseenter',()=>{ if(!v){v=document.createElement('video');v.muted=true;v.loop=true;v.playsInline=true;v.preload='none';v.src='works/'+w.id+'.mp4';b.querySelector('.thumb').appendChild(v);} v.currentTime=Math.min(w.dur*0.3,10); v.play().then(()=>b.classList.add('playing')).catch(()=>{}); });
+      b.addEventListener('mouseleave',()=>{ if(v){v.pause();b.classList.remove('playing');} });
+    }
+    b.classList.add('rv'); b.style.setProperty('--d',i%3);
+    grid.appendChild(b); reveal(b);
+  });
+  applyFilter();
+}
+function applyFilter(){
+  order=[];
+  grid.querySelectorAll('.card').forEach(el=>{const show=cat==='all'||el.dataset.c===cat;el.hidden=!show;if(show)order.push(+el.dataset.i)});
+}
+
+const lb=$('#lb'), lbVid=$('#lbVid'); let cur=-1, lastFocus=null;
+function openLb(i){
+  cur=i; const w=WORKS[i]; lastFocus=document.activeElement;
+  $('#lbTitle').textContent=w.t[lang];
+  $('#lbSub').textContent=CATS[w.c][lang]+(w.cl?' · '+w.cl:'')+' · '+fmt(w.dur);
+  $('#lbDesc').textContent=w.d[lang];
+  lbVid.poster='works/'+w.id+'.jpg';
+  lb.hidden=false; document.body.style.overflow='hidden'; lb.classList.remove('zoom'); void lb.offsetWidth; if(!RM) lb.classList.add('zoom');
+  const hv=$('#heroVid'); hv.pause();
+  if(w.parts){ loadParts(w,i); } else { lbVid.src='works/'+w.id+'.mp4'; lbVid.play().catch(()=>{}); }
+  $('#lbClose').focus();
+}
+const blobCache={};
+async function loadParts(w,i){
+  const lt=$('#lbLoad'); lt.hidden=false; lbVid.removeAttribute('src');
+  try{
+    let url=blobCache[w.id];
+    if(!url){
+      const bufs=[]; let got=0;
+      for(let k=0;k<w.parts;k++){ const r=await fetch('works/'+w.id+'.p'+k+'.mp4'); bufs.push(await r.blob()); got++; lt.textContent=(lang==='ar'?'جارِ التحميل… ':'Loading… ')+Math.round(got/w.parts*100)+'%'; if(cur!==i) return; }
+      url=URL.createObjectURL(new Blob(bufs,{type:'video/mp4'})); blobCache[w.id]=url;
+    }
+    if(cur!==i||lb.hidden) return;
+    lbVid.src=url; lbVid.play().catch(()=>{});
+  }catch(e){ lt.textContent=lang==='ar'?'تعذر تحميل الفيديو.':'Could not load the video.'; return; }
+  lt.hidden=true;
+}
+function closeLb(){ $('#lbLoad').hidden=true; lbVid.pause(); lbVid.removeAttribute('src'); lbVid.load(); lb.hidden=true; document.body.style.overflow=''; $('#heroVid').play().catch(()=>{}); if(lastFocus) lastFocus.focus(); }
+function step(d){ const p=order.indexOf(cur); if(p<0) return; openLb(order[(p+d+order.length)%order.length]); }
+$('#lbClose').onclick=closeLb; $('#lbPrev').onclick=()=>step(lang==='ar'?1:-1); $('#lbNext').onclick=()=>step(lang==='ar'?-1:1);
+lb.addEventListener('click',e=>{ if(e.target===lb||e.target.classList.contains('stage')) closeLb(); });
+lb.addEventListener('keydown',e=>{ if(e.key==='Escape') closeLb(); if(e.key==='ArrowRight') step(lang==='ar'?-1:1); if(e.key==='ArrowLeft') step(lang==='ar'?1:-1); });
+
+// hero timecode + mute
+const hv=$('#heroVid'), tc=$('#tc');
+function tick(){ const t=hv.currentTime||0, f=Math.floor((t%1)*25), s=Math.floor(t)%60, m=Math.floor(t/60)%60;
+  tc.textContent='TC 00:'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+':'+String(f).padStart(2,'0'); requestAnimationFrame(tick); }
+requestAnimationFrame(tick);
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){ hv.removeAttribute('autoplay'); hv.pause(); }
+$('#muteBtn').onclick=()=>{ hv.muted=!hv.muted; if(!hv.muted) hv.play().catch(()=>{}); $('#muteX').style.display=hv.muted?'':'none'; $('#muteBtn').setAttribute('aria-label',hv.muted?'Unmute':'Mute'); };
+
+// copy
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-copy]'); if(!b) return;
+  const el=document.getElementById(b.dataset.copy), txt=el.textContent.trim();
+  const done=()=>{ b.textContent=T[lang].copied; setTimeout(()=>b.textContent=T[lang].copy,1600); };
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done).catch(()=>sel(el)); } else sel(el);
+  function sel(n){ const r=document.createRange(); r.selectNodeContents(n); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+
+// CV downloads
+let dls=null;
+(async()=>{ try{ if(window.claude&&claude.use) dls=await claude.use('downloads'); }catch(e){} })();
+document.querySelectorAll('[data-cv]').forEach(b=>b.addEventListener('click',async()=>{
+  const note=$('#dlNote'); const which=b.dataset.cv;
+  const file= which==='ar' ? 'cv/Taha-Oudah-CV-AR.pdf' : 'cv/Taha-Oudah-CV-EN.pdf';
+  if(!dls){ const a=document.createElement('a'); a.href=file; a.download=file.split('/')[1]; document.body.appendChild(a); a.click(); a.remove(); return; }
+  try{ const blob=await (await fetch(file)).blob(); await dls.save({filename:file.split('/')[1],data:blob}); note.textContent=T[lang].saved; }
+  catch(err){ if(!err||err.code!=='declined') note.textContent=T[lang].dlFail; }
+}));
+
+// language
+function setLang(l){
+  lang=l; const h=document.documentElement; h.lang=l; h.dir=l==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-i]').forEach(el=>{ const k=el.dataset.i; if(T[l][k]!=null){ if(k==='aboutP2') el.innerHTML=T[l][k]; else el.textContent=T[l][k]; } });
+  $('#langBtn').textContent=T[l].lang; $('#langBtn').setAttribute('aria-label',l==='ar'?'Switch to English':'التبديل إلى العربية');
+  try{localStorage.setItem('to-lang',l)}catch(e){}
+  renderFilters(); renderGrid();
+}
+$('#langBtn').onclick=()=>setLang(lang==='ar'?'en':'ar');
+$('#statWorks').textContent=WORKS.length;
+setLang(lang);
+
+// intro: film leader 3-2-1 → white flash → wipe
+(function(){
+  const el=document.getElementById('intro'); let seen=false;
+  try{ seen=sessionStorage.getItem('to-intro')==='1'; }catch(e){}
+  if(RM||seen) return;
+  try{ sessionStorage.setItem('to-intro','1'); }catch(e){}
+  el.hidden=false; document.body.style.overflow='hidden';
+  const num=document.getElementById('introNum'); const ring=el.querySelector('.ring');
+  let n=3, t0=performance.now(), done=false;
+  function finish(){ if(done) return; done=true; el.classList.add('flash');
+    setTimeout(()=>{ el.classList.remove('flash'); el.classList.add('out'); document.body.style.overflow=''; setTimeout(()=>{el.hidden=true;},750); },80); }
+  function f(now){ if(done) return; const t=(now-t0)/1000; const k=Math.min(2,Math.floor(t/0.42)); num.textContent=3-k;
+    ring.style.setProperty('--sweep',((t%0.42)/0.42*360)+'deg'); if(t>=1.26) finish(); else requestAnimationFrame(f); }
+  requestAnimationFrame(f); el.addEventListener('click',finish);
+})();
+
+// nav: wipe transition between sections
+const wipe=document.getElementById('wipe'), wipeTxt=document.getElementById('wipeTxt');
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const id=a.getAttribute('href'); const target=id==='#top'?document.body:document.querySelector(id);
+  if(!target||RM) return; e.preventDefault();
+  wipeTxt.textContent=a.textContent.trim().length<30?a.textContent.trim():'';
+  wipe.classList.remove('go'); void wipe.offsetWidth; wipe.classList.add('go');
+  setTimeout(()=>{ (id==='#top'?window.scrollTo({top:0,behavior:'instant'}):target.scrollIntoView({behavior:'instant',block:'start'})); },420);
+}));
+
+// count-up stats
+(function(){ const bs=document.querySelectorAll('.stat b'); if(RM||!io) return;
+  const o=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; o.unobserve(e.target); const el=e.target, end=+el.textContent; let s0=null;
+    function st(ts){ if(!s0) s0=ts; const p=Math.min(1,(ts-s0)/1100); el.textContent=Math.round(end*(1-Math.pow(1-p,3))); if(p<1) requestAnimationFrame(st); } requestAnimationFrame(st); }),{threshold:.5});
+  setTimeout(()=>bs.forEach(b=>o.observe(b)),1500);
+})();
+</script>
+
+</body>
+</html>
