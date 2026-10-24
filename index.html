@@ -238,7 +238,7 @@ html[dir="rtl"].js .rvx{clip-path:inset(0 0 0 100%)}
       <div class="stats rv">
         <div class="stat"><b>8</b><span data-i="stYears">سنوات خبرة</span></div>
         <div class="stat"><b>52</b><span data-i="stClients">جهة وعلامة</span></div>
-        <div class="stat"><b id="statWorks">21</b><span data-i="stWorks">عمل مختار</span></div>
+        <div class="stat"><b id="statWorks">80</b><span data-i="stWorks">عمل مختار</span></div>
       </div>
       <div class="cta">
         <a class="btn primary" href="#work" data-i="ctaWork">شاهد الأعمال</a>
@@ -353,7 +353,8 @@ const CATS={
   re:{ar:'عقارات وبراندات',en:'Real estate & brand'},
   ad:{ar:'إعلانات',en:'Commercials'},
   reel:{ar:'ريلز',en:'Reels'},
-  art:{ar:'أزياء وفن',en:'Fashion & art'}
+  art:{ar:'أزياء وفن',en:'Fashion & art'},
+  ev:{ar:'فعاليات',en:'Events'}
 };
 // v = vertical; t = title; d = one-line note
 const WORKS=[
@@ -368,7 +369,7 @@ const WORKS=[
  {id:'33',c:'cine',v:0,dur:81,t:{ar:'فيلم قصير — الطريق',en:'Short film — The Road'},d:{ar:'دراما قصيرة بتدريج لوني دافئ.',en:'Short drama in a warm grade.'}},
  {id:'12',c:'re',v:0,dur:42,cl:'Amwaj',t:{ar:'أمواج — المدينة ليلاً',en:'Amwaj — the city at night'},d:{ar:'جوي وليلي لمشاريع أمواج.',en:'Aerial and night footage of Amwaj projects.'}},
  {id:'43',c:'art',v:1,dur:14,t:{ar:'Art-Tech',en:'Art-Tech'},d:{ar:'إعلان مستوحى من لوحة خلق آدم.',en:'An ad built on The Creation of Adam.'}},
- {id:'02',c:'re',v:0,dur:359,parts:3,t:{ar:'فيلم تعريفي — داتا سنتر',en:'Corporate film — Data center'},d:{ar:'فيلم تعريفي تقني طويل.',en:'A long-form technical corporate film.'}},
+ {id:'vf8d6ed',c:'re',v:0,dur:359,t:{ar:'فيلم تعريفي — داتا سنتر',en:'Corporate film — Data center'},d:{ar:'فيلم تعريفي تقني طويل.',en:'A long-form technical corporate film.'}},
  {id:'14',c:'reel',v:1,dur:21,t:{ar:'ريل — نصيحة بالأرقام',en:'Reel — tips by numbers'},d:{ar:'Talking-head بكابشن متحرك.',en:'Talking-head with kinetic captions.'}},
  {id:'36',c:'cine',v:0,dur:75,t:{ar:'تراث',en:'Heritage'},d:{ar:'قطعة وثائقية عن المكان والناس.',en:'A documentary piece on place and people.'}},
  {id:'23',c:'ad',v:1,dur:43,t:{ar:'تفاصيل السيارة',en:'Car detailing'},d:{ar:'لقطات ماكرو وتفاصيل.',en:'Macro shots and detail.'}},
@@ -376,8 +377,67 @@ const WORKS=[
  {id:'46',c:'cine',v:0,dur:70,t:{ar:'فيلم قصير — البيت',en:'Short film — The House'},d:{ar:'مشاهد داخلية بإضاءة طبيعية.',en:'Interior scenes in natural light.'}},
  {id:'42',c:'reel',v:1,dur:39,t:{ar:'ريل — عيادة LISA',en:'Reel — LISA clinic'},d:{ar:'Talking-head بإضاءة نيون.',en:'Talking-head with neon lighting.'}},
  {id:'16',c:'re',v:1,dur:27,t:{ar:'حي سكني — ريل',en:'Residential district — reel'},d:{ar:'ريل عمودي بحركة FPV.',en:'Vertical reel with FPV movement.'}},
- {id:'01',c:'re',v:0,dur:319,parts:2,t:{ar:'فيلم تعريفي — منصة رقمية',en:'Corporate film — Digital platform'},d:{ar:'فيلم تعريفي لمنصة تقنية.',en:'A corporate film for a tech platform.'}},
- {id:'40',c:'re',v:1,dur:310,parts:2,t:{ar:'فيلم مشروع — مع الـ Timeline',en:'Project film — with the timeline'},d:{ar:'الفيلم كاملاً مع الـ timeline.',en:'The full film alongside its timeline.'}}
+ {id:'v6f458e',c:'re',v:0,dur:319,t:{ar:'فيلم تعريفي — منصة رقمية',en:'Corporate film — Digital platform'},d:{ar:'فيلم تعريفي لمنصة تقنية.',en:'A corporate film for a tech platform.'}},
+ {id:'v44df7c',c:'re',v:1,dur:310,t:{ar:'فيلم مشروع — مع الـ Timeline',en:'Project film — with the timeline'},d:{ar:'الفيلم كاملاً مع الـ timeline.',en:'The full film alongside its timeline.'}},
+ {id:'v74cc24',c:'re',v:0,dur:290,cl:'Amwaj',t:{ar:'أمواج — فيلم المسيرة',en:'Amwaj — the journey film'},d:{ar:'',en:''}},
+ {id:'v81a906',c:'reel',v:1,dur:43,cl:'Soskin',t:{ar:'Soskin — Body Scrub',en:'Soskin — Body Scrub'},d:{ar:'',en:''}},
+ {id:'v666111',c:'reel',v:1,dur:60,t:{ar:'ريل — العناية بالبشرة',en:'Reel — skincare'},d:{ar:'',en:''}},
+ {id:'vb64342',c:'reel',v:1,dur:65,t:{ar:'ريل — حوار',en:'Reel — conversation'},d:{ar:'',en:''}},
+ {id:'v9dfadc',c:'re',v:1,dur:26,t:{ar:'برج — رندر معماري',en:'Tower — architectural render'},d:{ar:'',en:''}},
+ {id:'v274bbf',c:'re',v:1,dur:32,t:{ar:'مثيل — بغداد',en:'Baghdad — one of a kind'},d:{ar:'',en:''}},
+ {id:'v97bb5c',c:'ad',v:1,dur:40,t:{ar:'التصميم الداخلي للسيارة',en:'Car interior design'},d:{ar:'',en:''}},
+ {id:'v23234a',c:'re',v:0,dur:33,t:{ar:'برج أعمال',en:'Business tower'},d:{ar:'',en:''}},
+ {id:'v94d0ad',c:'reel',v:1,dur:21,cl:'Soskin',t:{ar:'Soskin — اليوم مكس',en:'Soskin — today\'s mix'},d:{ar:'',en:''}},
+ {id:'vaf8b3e',c:'re',v:1,dur:20,cl:'Amwaj',t:{ar:'أمواج — البرج',en:'Amwaj — the tower'},d:{ar:'',en:''}},
+ {id:'vc76b37',c:'re',v:1,dur:22,t:{ar:'موقع البناء',en:'Construction site'},d:{ar:'',en:''}},
+ {id:'v5221ea',c:'reel',v:1,dur:18,t:{ar:'ريل — 200 ألف',en:'Reel — 200K'},d:{ar:'',en:''}},
+ {id:'v8a2ac7',c:'re',v:0,dur:55,t:{ar:'لمسة فخامة',en:'A touch of luxury'},d:{ar:'',en:''}},
+ {id:'v3bd6ed',c:'re',v:0,dur:30,cl:'Amwaj',t:{ar:'أمواج — العلم العراقي',en:'Amwaj — the Iraqi flag'},d:{ar:'',en:''}},
+ {id:'v13f641',c:'re',v:1,dur:13,t:{ar:'من أرض',en:'From the land'},d:{ar:'',en:''}},
+ {id:'v39fca7',c:'re',v:1,dur:23,t:{ar:'البناء من الجو',en:'Construction from the air'},d:{ar:'',en:''}},
+ {id:'vbc0213',c:'re',v:0,dur:72,cl:'Amwaj',t:{ar:'أمواج — فرق العمل',en:'Amwaj — on-site teams'},d:{ar:'',en:''}},
+ {id:'v47d686',c:'re',v:0,dur:38,t:{ar:'الفلل',en:'The villas'},d:{ar:'',en:''}},
+ {id:'v7c17b8',c:'ev',v:0,dur:75,t:{ar:'فعالية رسمية',en:'Official event'},d:{ar:'',en:''}},
+ {id:'ve6ef45',c:'re',v:1,dur:51,cl:'Amwaj',t:{ar:'أمواج — مع حركة البناء',en:'Amwaj — as construction moves'},d:{ar:'',en:''}},
+ {id:'ve33625',c:'ad',v:0,dur:53,t:{ar:'سوبرماركت',en:'Supermarket'},d:{ar:'',en:''}},
+ {id:'vd28ce6',c:'re',v:1,dur:8,t:{ar:'فيلا — رندر',en:'Villa — render'},d:{ar:'',en:''}},
+ {id:'ve7dd5c',c:'re',v:1,dur:28,t:{ar:'Authentic — تيزر',en:'Authentic — teaser'},d:{ar:'',en:''}},
+ {id:'v3ff831',c:'ad',v:1,dur:36,t:{ar:'تيزر — أوضح نسخة',en:'Teaser — the clearest version'},d:{ar:'',en:''}},
+ {id:'vd4aa14',c:'re',v:0,dur:137,t:{ar:'المشروع من الأعلى',en:'The project from above'},d:{ar:'',en:''}},
+ {id:'vfe67af',c:'re',v:1,dur:9,t:{ar:'الخضار',en:'Greenery'},d:{ar:'',en:''}},
+ {id:'v3e7c88',c:'reel',v:1,dur:36,cl:'Amwaj',t:{ar:'أمواج — ريلز الحلقة الثانية',en:'Amwaj — reels episode 2'},d:{ar:'',en:''}},
+ {id:'v401b4d',c:'reel',v:1,dur:19,t:{ar:'ريل — النضارة',en:'Reel — radiance'},d:{ar:'',en:''}},
+ {id:'vd2c23a',c:'ad',v:0,dur:81,t:{ar:'عيد الأضحى',en:'Eid al-Adha'},d:{ar:'',en:''}},
+ {id:'ve027f7',c:'art',v:1,dur:20,t:{ar:'الباليرينا',en:'The ballerina'},d:{ar:'',en:''}},
+ {id:'v44b2fa',c:'reel',v:1,dur:76,cl:'Amwaj',t:{ar:'أمواج — من الموقع',en:'Amwaj — from the site'},d:{ar:'',en:''}},
+ {id:'v1da2fc',c:'re',v:0,dur:38,cl:'Amwaj',t:{ar:'أمواج، حيثُ الكمال',en:'Amwaj, where perfection lives'},d:{ar:'',en:''}},
+ {id:'vd79cd3',c:'re',v:1,dur:14,cl:'Amwaj',t:{ar:'نتوسع… لنحتوي',en:'We expand… to embrace'},d:{ar:'',en:''}},
+ {id:'v361d32',c:'re',v:0,dur:36,t:{ar:'المدينة من الجو',en:'The city from above'},d:{ar:'',en:''}},
+ {id:'v1b6031',c:'cine',v:0,dur:34,t:{ar:'الغروب',en:'Sunset'},d:{ar:'',en:''}},
+ {id:'vb0a127',c:'re',v:0,dur:22,t:{ar:'المسبح',en:'The pool'},d:{ar:'',en:''}},
+ {id:'vc3ab70',c:'reel',v:1,dur:29,t:{ar:'ريل — عيادة',en:'Reel — clinic'},d:{ar:'',en:''}},
+ {id:'v4a727d',c:'cine',v:0,dur:57,t:{ar:'فيلم قصير — الحمّام',en:'Short film — The Bathhouse'},d:{ar:'',en:''}},
+ {id:'veaddb2',c:'reel',v:1,dur:36,t:{ar:'ريل — خفيفة',en:'Reel — light'},d:{ar:'',en:''}},
+ {id:'v05434a',c:'reel',v:1,dur:19,cl:'Amwaj',t:{ar:'أمواج — أربع خطوات للتداول',en:'Amwaj — four steps to trading'},d:{ar:'',en:''}},
+ {id:'v0c5a48',c:'cine',v:0,dur:44,t:{ar:'الكثبان',en:'The dunes'},d:{ar:'',en:''}},
+ {id:'v27dbe4',c:'reel',v:1,dur:12,t:{ar:'ريل — ثلاث نصائح',en:'Reel — three tips'},d:{ar:'',en:''}},
+ {id:'v3b0f7d',c:'re',v:0,dur:72,t:{ar:'الأبراج',en:'The towers'},d:{ar:'',en:''}},
+ {id:'v9c1962',c:'reel',v:1,dur:17,t:{ar:'ريل — السعادة',en:'Reel — happiness'},d:{ar:'',en:''}},
+ {id:'v635fe3',c:'re',v:0,dur:50,t:{ar:'المخططات',en:'The plans'},d:{ar:'',en:''}},
+ {id:'vb6f04b',c:'cine',v:0,dur:59,t:{ar:'التمثال',en:'The statue'},d:{ar:'',en:''}},
+ {id:'v91e866',c:'reel',v:1,dur:19,t:{ar:'ريل — النضارة ٢',en:'Reel — radiance 2'},d:{ar:'',en:''}},
+ {id:'vb1e371',c:'re',v:0,dur:37,cl:'Amwaj',t:{ar:'أمواج — الحِرفة',en:'Amwaj — the craft'},d:{ar:'',en:''}},
+ {id:'v0c117b',c:'re',v:0,dur:16,t:{ar:'أبراج في السماء',en:'Towers in the sky'},d:{ar:'',en:''}},
+ {id:'vc21200',c:'re',v:0,dur:47,t:{ar:'فريق الموقع',en:'The site team'},d:{ar:'',en:''}},
+ {id:'vb84438',c:'reel',v:1,dur:22,t:{ar:'ريل — قصير',en:'Reel — short'},d:{ar:'',en:''}},
+ {id:'vafc3da',c:'cine',v:0,dur:81,t:{ar:'فيلم قصير — النافذة',en:'Short film — The Window'},d:{ar:'',en:''}},
+ {id:'v49199d',c:'cine',v:1,dur:81,t:{ar:'خلف المونتاج — النافذة',en:'Behind the edit — The Window'},d:{ar:'',en:''}},
+ {id:'vea162e',c:'reel',v:1,dur:27,t:{ar:'ريل — الخيوط',en:'Reel — threads'},d:{ar:'',en:''}},
+ {id:'v88f4aa',c:'re',v:1,dur:15,cl:'Amwaj',t:{ar:'أمواج — مشاريع تدوم',en:'Amwaj — projects that last'},d:{ar:'',en:''}},
+ {id:'vb85fa3',c:'cine',v:0,dur:75,t:{ar:'آثار من الجو',en:'Ruins from the air'},d:{ar:'',en:''}},
+ {id:'v369768',c:'ad',v:1,dur:28,t:{ar:'EVE',en:'EVE'},d:{ar:'',en:''}},
+ {id:'vce45e2',c:'reel',v:1,dur:47,t:{ar:'ريل — الطبيبين',en:'Reel — the doctors'},d:{ar:'',en:''}},
+ {id:'v4f35c3',c:'cine',v:1,dur:70,t:{ar:'خلف المونتاج — البيت',en:'Behind the edit — The House'},d:{ar:'',en:''}}
 ];
 const T={
  ar:{navWork:'الأعمال',navClients:'الجهات',navAbout:'عني',navContact:'تواصل',name:'طه علي عودة',sub:'مونتير · مخرج · صانع أفلام — بغداد',motto:'لكل لقطة سبب، ولكل قطعٍ توقيته.',stYears:'سنوات خبرة',stClients:'جهة وعلامة',stWorks:'عمل مختار',ctaWork:'شاهد الأعمال',ctaContact:'تواصل معي',workTitle:'أعمال مختارة',workSub:'سينما، عقارات، إعلانات، ريلز وأزياء. اضغط على أي عمل لمشاهدته.',clientsTitle:'جهات عملت معها',clientsSub:'ثقةٌ بُنيت عبر سنوات من العمل، وهذه الأسماء كانت جزءاً من الرحلة.',aboutTitle:'مُنذ عام 2018',aboutP1:'صانع أفلام ومونتير بخبرة ثماني سنوات تنقّلت فيها بين الفيلم والإعلان وصناعة المحتوى. أشغل حالياً منصب Creative Production Manager في شركة أمواج الدولية، وأقود فريق المونتيرية والمصورين في قسم التسويق.',aboutP2:'بدأت المونتاج من <strong>After Effects</strong> قبل أي برنامج آخر، لذلك الحركة والتفاصيل البصرية جزء أصيل من طريقة تفكيري في القطع. أكتب الفكرة المونتاجية والإخراجية للعمل قبل تنفيذه.',tl1:'شركة أمواج الدولية',tl2:'عمل حر',tl2w:'مخرج · مساعد مخرج · مونتير',tl3:'جامعة بغداد — الفنون الجميلة',tl3w:'بكالوريوس سينما وتلفزيون، فرع المونتاج',cvAr:'تحميل السيرة الذاتية — عربي',cvEn:'Download CV — English',contactTitle:'لنصنع شيئاً معاً',phone:'الهاتف / واتساب',email:'البريد الإلكتروني',copy:'نسخ',copied:'تم النسخ',open:'فتح الحساب',thanks:'شكراً',sec:'ث',saved:'تم الحفظ',dlFail:'التحميل غير متاح هنا. تواصل معي وأرسلها لك.',lang:'EN'},
@@ -431,7 +491,7 @@ function openLb(i){
   cur=i; const w=WORKS[i]; lastFocus=document.activeElement;
   $('#lbTitle').textContent=w.t[lang];
   $('#lbSub').textContent=CATS[w.c][lang]+(w.cl?' · '+w.cl:'')+' · '+fmt(w.dur);
-  $('#lbDesc').textContent=w.d[lang];
+  $('#lbDesc').textContent=(w.d&&w.d[lang])||'';
   lbVid.poster='works/'+w.id+'.jpg';
   lb.hidden=false; document.body.style.overflow='hidden'; lb.classList.remove('zoom'); void lb.offsetWidth; if(!RM) lb.classList.add('zoom');
   const hv=$('#heroVid'); hv.pause();
